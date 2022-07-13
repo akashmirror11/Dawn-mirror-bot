@@ -46,10 +46,10 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("Report Group", "https://t.me/Mltb_chat_unofficial")
-    buttons.buildbutton("Repo", "https://github.com/Dawn-India/Z-Mirror")
-    buttons.buildbutton("Mirror Group", "https://t.me/z_mirror")
-    buttons.buildbutton("Owner", "https://t.me/dawn_in")
+    buttons.buildbutton("Report", "https://t.me/HELL_GaM")
+    buttons.buildbutton("channel", "https://t.me/MM_Films")
+    buttons.buildbutton("Mirror Group", "https://t.me/+5D_ikTuvUa8xZDZl")
+    buttons.buildbutton("Owner", "https://t.me/HELL_GaM")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
@@ -154,7 +154,7 @@ help_string_telegraph = f'''<br>
 '''
 
 help = telegraph.create_page(
-        title='Z-Mirror-Bot Help',
+        title='AI-Mirror-Bot Help',
         content=help_string_telegraph,
     )["path"]
 
